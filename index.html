@@ -220,7 +220,7 @@
                       var mensagem = document.querySelector('#formulario #mensagem').value;
                 
                       // Criar um link com os parâmetros
-                      var link = 'https://api.whatsapp.com/send?phone=5598996140883&text=Olá, eu me chamo e venho através do seu site' + encodeURIComponent(nome) + ', meu numero: ' + encodeURIComponent(telefone) + ', meu email: ' + encodeURIComponent(email) + ' - mensagem: ' + encodeURIComponent(mensagem);
+                      var link = 'https://api.whatsapp.com/send?phone=5598996140883&text=Olá, eu me chamo ' + encodeURIComponent(nome) + ', meu numero: ' + encodeURIComponent(telefone) + ', meu email: ' + encodeURIComponent(email) + ' - mensagem: ' + encodeURIComponent(mensagem);
                 
                       // Redirecionar para o link
                       window.open(link,'_blank');
