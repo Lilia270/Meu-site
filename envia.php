@@ -1,5 +1,9 @@
 <?php
 
+$nome = '';
+$email = '';
+$telefone = '';
+$mensagem = '';
 
     if(isset($_POST['email']) && !empty($_POST['email'])) {
 
