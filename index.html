@@ -3,261 +3,498 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!--GOOGLE FONTS-->
+    
+    <!-- GOOGLE FONTS - Poppins -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-    <!-- TERMINA GOOGLE FONTS-->
-    <!--ICONE BOOTSTRAP-->
+    <!-- FIM GOOGLE FONTS -->
+    
+    <!-- ICONES BOOTSTRAP -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css">
-    <!--TERMINA ICONE BOOTSTRAP-->
+    <!-- FIM ICONES BOOTSTRAP -->
+    
+    <!-- ARQUIVOS CSS PRÓPRIOS -->
     <link rel="stylesheet" href="style.css">
+    
+    <!-- FAVICON -->
     <link rel="icon" href="images/logo.jpg">
+    
+    <!-- SCRIPTS -->
     <script src="menu.js" defer></script>
-    <title>Portifólio Lilia Rosa</title>
+    
+    <title>Lilia Rosa - Desenvolvedora Web</title>
 </head>
+
 <body>
+    <!-- ========== CABEÇALHO ========== -->
     <header>
-       <div class = "interface">
+        <div class="interface">
+            <!-- LOGO -->
             <div class="logo">
                 <a href="#">
                     <img src="images/logo.jpg" alt="logo do site">
                 </a>
-
-            </div><!--logo-->
-
+            </div>
+            
+            <!-- MENU DESKTOP -->
             <nav class="menu-desktop">
                 <ul>
                     <li><a href="#topo-do-site">Início</a></li>
-                    <li><a href="#especialidades">Especialidades</a></li>
-                    <li><a href="#sobre">Sobre mim</a></li>
-                    <li><a href="#portifolio">Projetos</a></li>
+                    <li><a href="#servicos">Serviços</a></li>
+                    <li><a href="#diferenciais">Diferenciais</a></li>
+                    <li><a href="#sobre">Sobre</a></li>
+                    <li><a href="#portfolio">Portfólio</a></li>
+                    <li><a href="#contato">Contato</a></li>
                 </ul>
             </nav>
-
+            
+            <!-- BOTÃO DE CONTATO -->
             <div class="btn-contato">
-                <a href="https://www.linkedin.com/in/lilia-rosa-0a5ab8216/" target="_blank">
-                    <button>Contato</button>
+                <a href="https://api.whatsapp.com/send?phone=5598996140883&text=Olá! Gostaria de solicitar um orçamento para meu site." target="_blank">
+                    <button>Orçamento</button>
                 </a>
-            </div><!--btn-contato-->
-
+            </div>
+            
+            <!-- BOTÃO ABRIR MENU MOBILE -->
             <div class="btn-abrir-menu" id="btn-menu">
                 <i class="bi bi-list"></i>
-
-            </div><!--btn-abrir-menu-->
-
+            </div>
+            
+            <!-- MENU MOBILE -->
             <div class="menu-mobile" id="menu-mobile">
                 <div class="btn-fechar">
                     <i class="bi bi-x-lg"></i>
-                </div><!--btn-fechar-->>
+                </div>
+                
                 <nav>
                     <ul>
                         <li><a href="#topo-do-site">Início</a></li>
-                        <li><a href="#especialidades">Especialidades</a></li>
-                        <li><a href="#sobre">Sobre mim</a></li>
-                        <li><a href="#portifolio">Projetos</a></li>
-                        <li><a href="https://www.linkedin.com/in/lilia-rosa-0a5ab8216/" target="_blank">Contato</a></li>
+                        <li><a href="#servicos">Serviços</a></li>
+                        <li><a href="#diferenciais">Diferenciais</a></li>
+                        <li><a href="#sobre">Sobre</a></li>
+                        <li><a href="#portfolio">Portfólio</a></li>
+                        <li><a href="#contato">Contato</a></li>
                     </ul>
-                
-            
                 </nav>
-            </div><!--menu-mobile-->
-
-            <div class="overlay-menu" id="overlay-menu">
-             </div><!--overlay-menu-->
-       </div><!--interface-->
+            </div>
+            
+            <!-- OVERLAY MENU MOBILE -->
+            <div class="overlay-menu" id="overlay-menu"></div>
+        </div>
     </header>
 
-
+    <!-- ========== CONTEÚDO PRINCIPAL ========== -->
     <main>
-        <section  id= "topo-do-site "class="topo-do-site">
+        <!-- SEÇÃO PRINCIPAL/HERO -->
+        <section id="topo-do-site" class="topo-do-site">
             <div class="interface">
                 <div class="flex">
                     <div class="txt-topo-site">
-                        <h1>TRANSFORMANDO IDEIAS EM REALIDADE DIGITAL<span>.</span></h1>
-                        <p>Seja bem-vindo a explorar meu portfólio, onde cada projeto é uma peça do quebra-cabeça que estou construindo para contribuir para um mundo mais conectado e eficiente. Estou pronta para desafios e colaborações inspiradoras. Vamos criar algo incrível juntos!</p>
-                    
-                    <div class="btn-contato">
-                        <a href="mailto:liliarosaestudos@gmail.com">
-                            <button>Fale comigo</button>
-                        </a>
+                        <h1 id="typewriter">CRIO SITES MODERNOS E ACESSÍVEIS PARA O SEU NEGÓCIO<span>.</span></h1>
+                        <p>Transformo ideias em presença digital com sites rápidos, responsivos e sob medida para o seu negócio. Do portfólio criativo às soluções reais, meu objetivo é ajudar empresas e profissionais a se destacarem online.</p>
+                        <p class="destaque">👉 Quer levar seu negócio para o digital ?</p>
+                        
+                        <div class="btn-contato">
+                            <a href="https://api.whatsapp.com/send?phone=5598996140883&text=Olá! Gostaria de solicitar um orçamento para meu site." target="_blank">
+                                <button><i class="bi bi-whatsapp"></i> Peça seu orçamento</button>
+                            </a>
+                            <a href="#portfolio">
+                                <button class="btn-secundario">Ver portfólio</button>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SEÇÃO DE SERVIÇOS -->
+        <section id="servicos" class="servicos">
+            <div class="interface">
+                <h2 class="titulo">O QUE <span>EU FAÇO ?</span></h2>
+                
+                <div class="flex">
+                    <div class="servico-box">
+                        <i class="bi bi-code-square"></i>
+                        <h3>Criação de Sites</h3>
+                        <p>Sites modernos, rápidos e personalizados para destacar seu negócio.</p>
                     </div>
                     
-                    </div><!--topo site-->
-
-
-
-                    <div class="img-topo-site">
-                        <img src="images/FOTO DE PERFIL.png" alt ="foto de perfil">
-
-                    </div><!--topo imagem site-->
-
-                </div><!--flex-->
-
-            </div><!--interface-->
-
-        </section><!--topo-do-site-->
-
-        <section id = "especialidades" class = "especialidades">
-            <div class="interface">
-                <h2 class="titulo">MINHAS  <span>ESPECIALIDADES.</span></h2>
-                <div class = "flex">
-                    <div class="especialidades-box">
-                        <i class="bi bi-code-square"></i>
-                        <h3>Website</h3>
-                        <p>Criação de websites</p>
-
-                    </div><!--especialidades-box-->
-                    <div class="especialidades-box">
+                    <div class="servico-box">
                         <i class="bi bi-wrench"></i>
-                        <h3>Manunteção</h3>
-                        <p>Atualizações de código</p>
-
-                    </div><!--especialidades-box-->
-                    <div class="especialidades-box">
+                        <h3>Manutenção</h3>
+                        <p>Atualizações, suporte e melhorias para manter seu site sempre no ar.</p>
+                    </div>
+                    
+                    <div class="servico-box">
                         <i class="bi bi-file-earmark-code-fill"></i>
-                        <h3>APIS</h3>
-                        <p>Criação de APIS web
-                             </p>
+                        <h3>Integrações (APIs)</h3>
+                        <p>Conexão de sistemas e automação de processos para facilitar sua rotina.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-                    </div><!--especialidades-box-->
+        <!-- SEÇÃO DE DIFERENCIAIS -->
+        <section id="diferenciais" class="diferenciais">
+            <div class="interface">
+                <h2 class="titulo">POR QUE FAZER SEU SITE <span>COMIGO?</span></h2>
+                
+                <div class="flex">
+                    <div class="diferencial-box">
+                        <i class="bi bi-currency-dollar"></i>
+                        <h3>Preços Acessíveis</h3>
+                        <p>"Oferecemos planos flexíveis, adaptados ao seu projeto, garantindo qualidade e preço justo</p>
+                    </div>
+                    
+                    <div class="diferencial-box">
+                        <i class="bi bi-phone"></i>
+                        <h3>Design Responsivo</h3>
+                        <p>Seu site perfeito em qualquer tela: celular, tablet ou computador.</p>
+                    </div>
+                    
+                    <div class="diferencial-box">
+                        <i class="bi bi-lightning"></i>
+                        <h3>Entrega Rápida</h3>
+                        <p>Desenvolvimento ágil, sem perder qualidade, com suporte inicial incluso.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-                </div><!--flex-->
-            </div><!--interface-->
-
-
-        </section><!--especialidades-->
-
-        <section id = "sobre" class = "sobre">
-            <div class = "interface">
-                <div class = "flex">
+        <!-- SEÇÃO SOBRE MIM -->
+        <section id="sobre" class="sobre">
+            <div class="interface">
+                <div class="flex">
                     <div class="img-sobre">
-                        <img src="images/foto.png" alt ="foto de perfil">
-
-                    </div><!--img-sobre-->
-
+                        <img src="images/foto.jpeg" alt="Foto de perfil">
+                    </div>
+                    
                     <div class="txt-sobre">
-                        <h2>MUITO PRAZER, <span>SOU LILIA ROSA.</span>
-                        </h2>
-                        <p>Sou graduanda em Engenharia da Computação na UFMA, com previsão de formatura em 2025!
-                             Estes anos na faculdade têm sido uma montanha-russa emocionante e cheia de descobertas incríveis.
-                              Imagine ter a oportunidade de mergulhar de cabeça em um mar de conhecimento, 
-                              desafios e inovação todos os dias. É exatamente isso que minha jornada acadêmica tem sido até agora.
-                        </p>
-
+                        <h2>SOBRE <span>MIM</span></h2>
                         <p>
-                            Escolhi a tecnologia como minha paixão e profissão, pois, para mim,
-                             trabalhar com códigos é como criar arte digital todos os dias. Cada projeto é uma tela em branco, 
-                            esperando ser preenchida com ideias inovadoras e soluções criativas.
+                            Sou desenvolvedora fullstack apaixonada por criar soluções digitais modernas, 
+                            responsivas e funcionais para pequenos negócios e profissionais. 
+                            Acredito que uma boa presença online conecta pessoas, gera confiança e impulsiona resultados.
                         </p>
 
-                        <p>Estou animada para levar minha paixão pela tecnologia e  
-                            por novas experiências para o mundo profissional. 
-                            Vamos criar algo juntos e explorar os horizontes da inovação! 
-                        </p>
+                        <div class="habilidades">
+                            <div class="habilidade-item">
+                                <i class="bi bi-laptop"></i>
+                                <span>Sites responsivos (qualquer dispositivo)</span>
+                            </div>
+                            
+                            <div class="habilidade-item">
+                                <i class="bi bi-lightning-charge"></i>
+                                <span>Performance otimizada (rápidos e leves)</span>
+                            </div>
+                            
+                            <div class="habilidade-item">
+                                <i class="bi bi-palette"></i>
+                                <span>Design moderno e personalizado</span>
+                            </div>
+                            
+                            <div class="habilidade-item">
+                                <i class="bi bi-shield-check"></i>
+                                <span>Segurança e confiança</span>
+                            </div>
+                        </div>
+                        
                         <div class="btn-social">
-                            <a href=https://drive.google.com/file/d/120PmMHsmtndvT3E64IBdImLfN41ZcPOU/view?usp=sharing" target="_blank"><button><i class="bi bi-paperclip"></i></button></a>
-                            <a href="https:www.linkedin.com/in/lilia-rosa-0a5ab8216/" target="_blank"><button><i class="bi bi-linkedin"></i></button></a>                                                   
-                            <a href="mailto:liliarosaestudos@gmail.com" target="_blank"><button><i class="bi bi-envelope-check"></i></button></a>
-                            <a href="https://github.com/Lilia270" target="_blank"><button><i class="bi bi-github"></i></button></a>
-                        </div><!--btn-social-->
-
-                    </div><!--txt-sobre-->
-
-                </div><!--flex-->
-
-            </div><!--interface-->
-
-        </section><!--sobre-->
-
-
-        <section id ="portifolio" class="portifolio">
-            <div class = "interface">
-                <h2 class="titulo">MEU <span>PORTIFÓLIO.</span></h2>
-                <div class = "flex">
-                    <div class="img-port" style="background-image:url(images/imagem.png);">
-                        <div class="overlay">
-                            Website - Financeiro
+                            <a href="https://drive.google.com/file/d/1gZVbx_MXqFtOsJHGKy0vtNrb2_Y9-H8Y/view?usp=sharing" target="_blank">
+                                <button><i class="bi bi-paperclip"></i></button>
+                            </a>
+                            <a href="https://www.linkedin.com/in/lilia-rosa-0a5ab8216/" target="_blank">
+                                <button><i class="bi bi-linkedin"></i></button>
+                            </a>
+                            <a href="mailto:liliarosaestudos@gmail.com" target="_blank">
+                                <button><i class="bi bi-envelope-check"></i></button>
+                            </a>
+                            <a href="https://github.com/Lilia270" target="_blank">
+                                <button><i class="bi bi-github"></i></button>
+                            </a>
                         </div>
-                    </div ><!--img-port-->
-                    <div class="img-port" style="background-image:url(images/imagem2.png);">
-                        <div class="overlay">
-                            Website - ONG 
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SEÇÃO PORTFÓLIO -->
+        <section id="portfolio" class="portifolio">
+            <div class="interface">
+                <h2 class="titulo">PROJETOS QUE JÁ <span>DESENVOLVI.</span></h2>
+                <h4>Cada projeto foi pensado para entregar design moderno, navegação simples e resultados reais.</h4>
+
+                <div class="carousel" data-offset="80">
+                    <button class="car-btn prev" aria-label="Anterior">‹</button>
+
+                    <div class="car-viewport">
+                        <div class="car-track">
+                            <!-- Slide 1 - Site institucional financeiro -->
+                            <div class="car-slide">
+                                <div class="projeto">
+                                    <div class="img-port" style="background-image:url(images/imagem.png);"></div>
+                                    <div class="info-projeto">
+                                        <p>Site institucional para empresa financeira</p>
+                                        <small>Modelo criado para empresas do setor financeiro.</small>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Slide 2 - Plataforma para ONG -->
+                            <div class="car-slide">
+                                <div class="projeto">
+                                    <div class="img-port" style="background-image:url(images/imagem2.png);"></div>
+                                    <div class="info-projeto">
+                                        <p>Plataforma para ONG</p>
+                                        <small>Site criado para aumentar visibilidade e captação de recursos.</small>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Slide 3 - Portal informativo saúde -->
+                            <div class="car-slide">
+                                <div class="projeto">
+                                    <div class="img-port" style="background-image:url(images/imagem3.png);"></div>
+                                    <div class="info-projeto">
+                                        <p>Portal informativo sobre saúde</p>
+                                        <small>Design clean e informativo — ideal para clínicas e profissionais da saúde.</small>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Slide 4 - Tela de login -->
+                            <div class="car-slide">
+                                <div class="projeto">
+                                    <div class="img-port" style="background-image:url(images/login.png);"></div>
+                                    <div class="info-projeto">
+                                        <p>Tela de Login</p>
+                                        <small>Interface simples e objetiva para autenticação.</small>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Slide 5 - Sistema para restaurante (vídeo) -->
+                            <div class="car-slide">
+                                <div class="projeto">
+                                    <video controls width="100%" height="250" style="border-radius: 15px; object-fit: cover;">
+                                        <source src="videos/restaurante.mp4" type="video/mp4">
+                                        Seu navegador não suporta vídeos.
+                                    </video>
+                                    <div class="info-projeto">
+                                        <p>Sistema para Restaurante</p>
+                                        <small>Plataforma de pedidos online desenvolvida para restaurantes.</small>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Slide 6 - Vitrine online (vídeo) -->
+                            <div class="car-slide">
+                                <div class="projeto">
+                                    <video controls width="100%" height="250" style="border-radius: 15px; object-fit: cover;">
+                                        <source src="videos/vitrine.mp4" type="video/mp4">
+                                        Seu navegador não suporta vídeos.
+                                    </video>
+                                    <div class="info-projeto">
+                                        <p>Vitrine Online</p>
+                                        <small>Apresentação de produtos com navegação intuitiva.</small>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Slide 7 - Clínica de estética (vídeo) -->
+                            <div class="car-slide">
+                                <div class="projeto">
+                                    <video controls width="100%" height="250" style="border-radius: 15px; object-fit: cover;">
+                                        <source src="videos/estetica.mp4" type="video/mp4">
+                                        Seu navegador não suporta vídeos.
+                                    </video>
+                                    <div class="info-projeto">
+                                        <p>Clínica de Estética</p>
+                                        <small>Landing page com foco em conversão e agendamento.</small>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-                    </div><!--img-port-->
-                    <div class="img-port" style="background-image:url(images/imagem3.png);">
-                        <div class="overlay">
-                            Website - Covid 19
-                        </div>
-                    </div><!--img-port-->
+                    </div>
+
+                    <button class="car-btn next" aria-label="Próximo">›</button>
+                    <div class="car-dots" role="tablist" aria-label="Paginação do portfólio"></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SEÇÃO DE CHAMADA FINAL (CTA) -->
+        <section class="cta-final">
+            <div class="interface">
+                <div class="flex">
+                    <div class="txt-cta">
+                        <h2>PRONTO PARA TER SEU SITE PROFISSIONAL?</h2>
+                        <p>Entre em contato e vamos transformar sua ideia em realidade digital</p>
+                    </div>
                     
-                    
+                    <div class="btn-cta">
+                        <a href="https://api.whatsapp.com/send?phone=5598996140883&text=Olá! Gostaria de solicitar um orçamento para meu site." target="_blank">
+                            <button class="btn-secundario"><i class="bi bi-whatsapp"></i> WhatsApp</button>
+                        </a>
+                        <a href="mailto:liliarosaestudos@gmail.com">
+                            <button class="btn-secundario"><i class="bi bi-envelope"></i> E-mail</button>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-                </div><!--flex-->
-
-            </div><!--interface-->
-
-        </section><!--portifolio-->
-
-        <section id="formulario" class="formulario">
+        <!-- SEÇÃO DE CONTATO -->
+        <section id="contato" class="formulario">
             <div class="interface">
                 <h2 class="titulo">FALE <span>COMIGO.</span></h2>
+                
                 <form>
                     <input type="text" name="nome" id="nome" placeholder="Seu nome completo" required>
-                    <input type="text" name="email" id="email" placeholder="Seu email" required>
-                    <input type="text" name="telefone" id="telefone" placeholder="Seu celular">
-                    <textarea name="mensagem" id="mensagem" placeholder="Sua mensagem" required></textarea>
-                    <div class="btn-enviar" ><input type="submit" onclick="coletarInformacoes()" value="ENVIAR" ></div>
+                    <input type="email" name="email" id="email" placeholder="Seu email" required>
+                    <input type="tel" name="telefone" id="telefone" placeholder="Seu celular">
+                    <textarea name="mensagem" id="mensagem" placeholder="Conte-me sobre seu projeto..." required></textarea>
                     
+                    <div class="btn-enviar">
+                        <input type="submit" onclick="coletarInformacoes()" value="ENVIAR MENSAGEM">
+                    </div>
                 </form>
-
-                <script>
-                    function coletarInformacoes() {
-                      // Obter valores dos campos do formulário usando querySelector
-                      var nome = document.querySelector('#formulario #nome').value;
-                      var email = document.querySelector('#formulario #email').value;
-                      var telefone = document.querySelector('#formulario #telefone').value;
-                      var mensagem = document.querySelector('#formulario #mensagem').value;
-                
-                      // Criar um link com os parâmetros
-                      var link = 'https://api.whatsapp.com/send?phone=5598996140883&text=Olá, eu me chamo ' + encodeURIComponent(nome) + ', meu numero: ' + encodeURIComponent(telefone) + ', meu email: ' + encodeURIComponent(email) + ' - mensagem: ' + encodeURIComponent(mensagem);
-                
-                      // Redirecionar para o link
-                      window.open(link,'_blank');
-                    }
-                  </script>
-
-            </div><!--formulario-->
-
-        </section><!--formulario-->
-
-
+            </div>
+        </section>
     </main>
 
+    <!-- ========== RODAPÉ ========== -->
     <footer>
         <div class="interface">
             <div class="line-footer">
                 <div class="flex">
                     <div class="logo-footer">
-                    <img src ="images/logo.jpg" alt="logo">
+                        <img src="images/logo.jpg" alt="logo">
+                    </div>
+                    
+                    <div class="btn-social">
+                        <a href="https://drive.google.com/file/d/1XsjfsQU3XgyJk49M7l1uVmNjJNVI3i5V/view?usp=sharing" target="_blank">
+                            <button><i class="bi bi-paperclip"></i></button>
+                        </a>
+                        <a href="https://www.linkedin.com/in/lilia-rosa-0a5ab8216/" target="_blank">
+                            <button><i class="bi bi-linkedin"></i></button>
+                        </a>
+                        <a href="mailto:liliarosaestudos@gmail.com">
+                            <button><i class="bi bi-envelope-check"></i></button>
+                        </a>
+                        <a href="https://github.com/Lilia270" target="_blank">
+                            <button><i class="bi bi-github"></i></button>
+                        </a>
+                    </div>
+                </div>
+            </div>
             
-                </div><!--logo-footer-->
-
-                <div class="btn-social">
-                    <a href="https://drive.google.com/file/d/1XsjfsQU3XgyJk49M7l1uVmNjJNVI3i5V/view?usp=sharing" target="_blank"><button><i class="bi bi-paperclip"></i></button></a>
-                    <a href="https://www.linkedin.com/in/lilia-rosa-0a5ab8216/" target="_blank"><button><i class="bi bi-linkedin"></i></button></a>
-                    <a href="mailto:liliarosaestudos@gmail.com"><button><i class="bi bi-envelope-check"></i></button></a>
-                    <a href="https://github.com/Lilia270" target="_blank"><button><i class="bi bi-github"></i></button></a>
-                </div><!--btn-social-->
-            </div><!--flex-->
-            </div><!--line-footer-->
-
-            <div class = "line-footer  borda" >
-                <p><i class="bi bi-envelope"></i> <a href="mailto:liliarosaestudos@gmail.com" target="_blank">liliarosaestudoos@gmail.com</a></p>
+            <div class="line-footer borda">
+                <p><i class="bi bi-envelope"></i> <a href="mailto:liliarosaestudos@gmail.com">liliarosaestudos@gmail.com</a></p>
                 <p><i class="bi bi-pencil"></i> Desenvolvido por Lilia Rosa.</p>
-            </div><!--line-footer-->
-
-        </div><!--interface-->
+            </div>
+        </div>
     </footer>
+
+    <!-- ========== SCRIPTS JAVASCRIPT ========== -->
+    
+    <!-- Função para coletar informações do formulário e enviar para WhatsApp -->
+    <script>
+        function coletarInformacoes() {
+            var nome = document.getElementById('nome').value;
+            var email = document.getElementById('email').value;
+            var telefone = document.getElementById('telefone').value;
+            var mensagem = document.getElementById('mensagem').value;
+            
+            var link = 'https://api.whatsapp.com/send?phone=5598996140883&text=Olá, eu me chamo ' + encodeURIComponent(nome) + ', meu numero: ' + encodeURIComponent(telefone) + ', meu email: ' + encodeURIComponent(email) + ' - mensagem: ' + encodeURIComponent(mensagem);
+            
+            window.open(link, '_blank');
+        }
+    </script>
+
+    <!-- Animação de aparecimento dos boxes ao rolar a página -->
+    <script>
+        const boxes = document.querySelectorAll(".servico-box, .diferencial-box");
+
+        window.addEventListener("scroll", () => {
+            const triggerBottom = window.innerHeight * 0.8;
+
+            boxes.forEach(box => {
+                const boxTop = box.getBoundingClientRect().top;
+                if (boxTop < triggerBottom) {
+                    box.classList.add("show");
+                }
+            });
+        });
+    </script>
+
+    <!-- Carousel do portfólio -->
+    <script>
+        (() => {
+            const car = document.querySelector('.carousel');
+            if (!car) return;
+
+            // offset opcional via data-attribute (ex.: data-offset="100")
+            const ds = car.getAttribute('data-offset');
+            if (ds) car.style.setProperty('--offset', ds + 'px');
+
+            const viewport = car.querySelector('.car-viewport');
+            const track    = car.querySelector('.car-track');
+            const slides   = Array.from(track.children);
+            const prev     = car.querySelector('.prev');
+            const next     = car.querySelector('.next');
+            const dotsWrap = car.querySelector('.car-dots');
+
+            let page = 0;
+
+            const spv = () => window.innerWidth >= 1024 ? 3 : (window.innerWidth >= 768 ? 2 : 1);
+            const pages = () => Math.ceil(slides.length / spv());
+
+            function setBasis() {
+                const basis = (100 / spv()) + '%';
+                slides.forEach(s => s.style.flex = `0 0 ${basis}`);
+            }
+
+            function goTo(p) {
+                const max = pages() - 1;
+                page = Math.max(0, Math.min(p, max));
+                track.style.transform = `translateX(-${page * 100}%)`;
+                prev.disabled = (page === 0);
+                next.disabled = (page === max);
+                [...dotsWrap.children].forEach((d,i)=> d.classList.toggle('active', i === page));
+            }
+
+            function buildDots() {
+                dotsWrap.innerHTML = '';
+                for (let i = 0; i < pages(); i++) {
+                    const b = document.createElement('button');
+                    b.type = 'button';
+                    b.addEventListener('click', () => goTo(i));
+                    dotsWrap.appendChild(b);
+                }
+                dotsWrap.children[page]?.classList.add('active');
+            }
+
+            function onResize() {
+                const currentSpv = spv();
+                setBasis();
+                // garantir que a página atual existe após mudar o spv
+                if (page > pages() - 1) page = pages() - 1;
+                buildDots();
+                goTo(page);
+            }
+
+            prev.addEventListener('click', () => goTo(page - 1));
+            next.addEventListener('click', () => goTo(page + 1));
+            window.addEventListener('resize', onResize);
+
+            // init
+            setBasis();
+            buildDots();
+            goTo(0);
+        })();
+    </script>
+
 </body>
 </html>
